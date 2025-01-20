@@ -9,10 +9,18 @@
     },
     {
       "title": "QR Code Generator",
-      "description": "Developed for the '20875 - Software Engineering' course, is a Python QR Code generator developed from scratch to be used through CLI inputs..",
+      "description": "Developed for the '20875 - Software Engineering' course, is a Python QR Code generator developed from scratch to be used through CLI inputs.",
       "image": "assets/images/qrproj_image.png",
       "buttons": [
         { "text": "Github Project", "link": "https://github.com/thecola13/QR-gen-python" }
+      ]
+    },
+    {
+      "title": "Image Quantizer",
+      "description": "Assignment for '20874 - Algorithms for Optimisation and Inference' course, is a Python image quantizer that uses K-means clustering to reduce the number of colors in an image. Also, the problem can also be solved using a glpsol and the provided code.",
+      "image": "assets/images/imgquant_proj.png",
+      "buttons": [
+        { "text": "Github Project", "link": "https://github.com/thecola13/Optimization-Image_Quant" }
       ]
     }
 

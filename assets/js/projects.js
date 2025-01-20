@@ -8,7 +8,7 @@ fetch('data/projects.json')
         <a href="${button.link}" class="btn btn-success btn-sm" target="_blank">${button.text}</a>`).join('');
 
       const description = project.description.length > 100 ? 
-        `${project.description.substring(0, 100)}<span class="dots">...</span><span class="more">${project.description.substring(100)}</span><button class="show-more btn btn-link btn-sm">Show more</button>` : 
+        `${project.description.substring(0, 100)}<span class="dots">...</span><span class="more" style="display: none;">${project.description.substring(100)}</span><button class="show-more btn btn-link btn-sm">Show more</button>` : 
         project.description;
 
       projects.innerHTML += `
