@@ -1,12 +1,20 @@
 [
     {
-      "title": "Thesis Project",
-      "description": "An AI approach to detecting toxicity.",
-      "image": "assets/images/thesis.jpg",
+      "title": "An Approach to the Explanation of Annotator-level Differences in Toxicity Detection Through Irony",
+      "description": "My Bachelor's thesis project, investigating whether irony in messages could influence the toxicity rating given by graders belonging to different social groups. Awareded full marks.",
+      "image": "assets/images/toxrating_image.png",
       "buttons": [
-        { "text": "Download PDF", "link": "assets/files/thesis.pdf" },
-        { "text": "GitHub", "link": "https://github.com/user/thesis-project" }
+        { "text": "Download PDF", "link": "assets/files/Thesis.pdf" }
+      ]
+    },
+    {
+      "title": "QR Code Generator",
+      "description": "Developed for the '20875 - Software Engineering' course, is a Python QR Code generator developed from scratch to be used through CLI inputs..",
+      "image": "assets/images/qrproj_image.png",
+      "buttons": [
+        { "text": "Github Project", "link": "https://github.com/thecola13/QR-gen-python" }
       ]
     }
+
   ]
   
