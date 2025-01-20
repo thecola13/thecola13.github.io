@@ -1,0 +1,12 @@
+[
+    {
+      "title": "Thesis Project",
+      "description": "An AI approach to detecting toxicity.",
+      "image": "assets/images/thesis.jpg",
+      "buttons": [
+        { "text": "Download PDF", "link": "assets/files/thesis.pdf" },
+        { "text": "GitHub", "link": "https://github.com/user/thesis-project" }
+      ]
+    }
+  ]
+  

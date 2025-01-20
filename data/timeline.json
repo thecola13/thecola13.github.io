@@ -1,0 +1,25 @@
+{
+  "timeline": [
+    {
+      "date": "09/2024",
+      "title": "Master in AI",
+      "description": "Started my Master's at Bocconi University."
+    },
+    {
+      "date": "01/2024",
+      "title": "Exchange Program",
+      "description": "Attended Georgia Institute of Technology."
+    },
+    {
+      "date": "09/2021",
+      "title": "Started BEMACS",
+      "description": "Began my undergraduate studies in the Bachelor of Economics, Management and Computer Science (BEMACS) at Bocconi University."
+    },
+    {
+        "date": "08/2024",
+        "title": "Graduating from BEMACS",
+        "description": "Graduated from my Bachelor's degree with 110 cum Laude, with a thesis on the impact of irony in toxicity rating."
+    }
+  ]
+}
+  
