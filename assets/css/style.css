@@ -1,0 +1,57 @@
+:root {
+    --primary-color: #4CAF50; /* Green tone */
+    --secondary-color: #81C784; /* Lighter green */
+    --text-color: #fff;
+    --background-color: #2E7D32;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--background-color);
+    color: var(--text-color);
+  }
+  
+  header {
+    text-align: center;
+    padding: 20px;
+  }
+  
+  nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+  }
+  
+  nav ul li {
+    margin: 0 10px;
+  }
+  
+  nav ul li a {
+    color: var(--text-color);
+    text-decoration: none;
+  }
+  
+  #timeline .timeline-container {
+    max-width: 600px;
+    margin: auto;
+    padding: 20px;
+  }
+  
+  .timeline-item {
+    background-color: var(--secondary-color);
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 5px;
+  }
+  
+  #projects .project {
+    max-width: 600px;
+    margin: 10px auto;
+    padding: 15px;
+    background-color: var(--secondary-color);
+    border-radius: 5px;
+  }
+  
