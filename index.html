@@ -4,22 +4,67 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Portfolio - Luca Colaci</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
-  <header>
-    <nav>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="timeline.html">Timeline</a></li>
-        <li><a href="projects.html">Projects</a></li>
+  <header class="bg-dark text-light py-4">
+    <nav class="container d-flex justify-content-between">
+      <a href="index.html" class="navbar-brand text-light">Luca Colaci</a>
+      <ul class="nav">
+        <li class="nav-item"><a href="index.html" class="nav-link text-light">Home</a></li>
+        <li class="nav-item"><a href="timeline.html" class="nav-link text-light">Timeline</a></li>
+        <li class="nav-item"><a href="projects.html" class="nav-link text-light">Projects</a></li>
       </ul>
     </nav>
-    <h1>Luca Colaci</h1>
-    <p>Artificial Intelligence Enthusiast | AI Master's Student at Bocconi University</p>
-    <p>
-      <a href="assets/files/Luca_Colaci_CV.pdf" download="Luca_Colaci_CV.pdf">Download My CV</a>
-    </p>
   </header>
+  <main class="container mt-5">
+    <section class="text-center mb-5">
+      <h1 class="display-4">Hi, I'm Luca Colaci</h1>
+      <p class="lead">Artificial Intelligence Enthusiast | Master's Student at Bocconi University</p>
+      <a href="assets/files/Luca_Colaci_CV.pdf" download="Luca_Colaci_CV.pdf" class="btn btn-primary">Download My CV</a>
+    </section>
+    <section>
+      <h2>About Me</h2>
+      <p>
+        Welcome to my portfolio! I am a master's student specializing in Artificial Intelligence at Bocconi University. 
+        With a passion for problem-solving, machine learning, and data science, I enjoy transforming ideas into impactful solutions.
+      </p>
+      <p>
+        I have collaborated on exciting projects in AI research, developed innovative approaches to data-driven challenges, and co-founded Astra Bocconi, 
+        a student-led initiative. Let's connect to explore potential collaborations or discuss the future of AI!
+      </p>
+    </section>
+    <section class="row mt-5">
+      <div class="col-md-4">
+        <div class="card bg-light text-dark">
+          <div class="card-body">
+            <h5 class="card-title">Education</h5>
+            <p class="card-text">Master's in AI at Bocconi University with a focus on Optimization, Inference, and AI Applications.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card bg-light text-dark">
+          <div class="card-body">
+            <h5 class="card-title">Skills</h5>
+            <p class="card-text">Python, Machine Learning, NLP, Data Manipulation, Leadership, and Public Speaking.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card bg-light text-dark">
+          <div class="card-body">
+            <h5 class="card-title">Passion</h5>
+            <p class="card-text">Applying technology to solve real-world problems and advancing the boundaries of AI research.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="bg-dark text-light text-center py-3 mt-5">
+    <p>© 2025 Luca Colaci. All rights reserved.</p>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
