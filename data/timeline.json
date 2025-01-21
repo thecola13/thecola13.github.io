@@ -1,25 +1,32 @@
-{
-  "timeline": [
-    {
-      "date": "09/2024",
-      "title": "Master in AI",
-      "description": "Started my Master's at Bocconi University."
-    },
-    {
-      "date": "01/2024",
-      "title": "Exchange Program",
-      "description": "Attended Georgia Institute of Technology."
-    },
-    {
-      "date": "09/2021",
-      "title": "Started BEMACS",
-      "description": "Began my undergraduate studies in the Bachelor of Economics, Management and Computer Science (BEMACS) at Bocconi University."
-    },
-    {
-        "date": "08/2024",
-        "title": "Graduating from BEMACS",
-        "description": "Graduated from my Bachelor's degree with 110 cum Laude, with a thesis on the impact of irony in toxicity rating."
-    }
-  ]
-}
-  
+[
+  {
+    "date": "09/2024",
+    "title": "Started the MSc in AI",
+    "description": "Started my Master's Degree in Artificial Intelligence at Bocconi University."
+  },
+  {
+      "date": "08/2024",
+      "title": "Graduating from BEMACS",
+      "description": "Graduated from my Bachelor's degree with a thesis on the impact of irony in toxicity rating by raters belonging to different social groups. Final grade: 110 cum Laude."
+  },
+  {
+    "date": "01/2024",
+    "title": "Exchange Program at Georgia Tech",
+    "description": "Attend a semester at Georgia Institute of Technology in Atlanta (GA). GPA: 4.0/4."
+  },
+  {
+    "date": "04/2023",
+    "title": "Astra wins elections in Bocconi",
+    "description": "I helped co-ordinate the virtual and physical marketing activities that helped Astra win a majority of seats in its first election."
+  },
+  {
+    "date": "02/2023",
+    "title": "Foundation of Astra Bocconi",
+    "description": "Founded a new student representatives group in my University."
+  },
+  {
+    "date": "09/2021",
+    "title": "Started BEMACS",
+    "description": "Began my undergraduate studies in the Bachelor of Economics, Management and Computer Science (BEMACS) at Bocconi University. GPA: 29/30."
+  }
+]

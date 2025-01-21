@@ -4,6 +4,12 @@
   --text-dark: #170312; /* Deep purple */
 }
 
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
   background-color: var(--primary-color);
   color: var(--text-dark);
@@ -20,15 +26,10 @@ header, footer {
 }
 
 #footer {
-
   position: fixed;
-
   bottom: 0;
-
   width: 100%;
-
   display: none;
-
 }
 
 
@@ -47,123 +48,11 @@ footer {
   position: absolute;
   bottom: 0;
   width: 100%;
-}
-/* Timeline Container */
-#timeline {
-  position: relative;
-  margin: 2rem 0;
-  padding-bottom: 6rem; /* Prevent footer overlap */
-}
-
-/* Timeline Bar */
-#timeline:before {
-  content: '';
-  position: absolute;
-  width: 4px;
-  background-color: var(--secondary-color); /* Ensure this is defined */
-  top: 0;
-  bottom: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  z-index: 1;
-}
-
-/* Timeline Events */
-.timeline-event {
-  position: relative;
-  margin: 2rem 0;
-  display: flex;
-  align-items: flex-start;
-  justify-content: flex-start;
-  width: 50%;
-}
-
-.timeline-event:nth-child(odd) {
-  left: 0;
-  text-align: right;
-  justify-content: flex-end;
-}
-
-.timeline-event:nth-child(even) {
-  left: 50%;
-  text-align: left;
-  flex-direction: row-reverse; /* Align cards left */
-}
-
-/* Dots */
-.timeline-dot {
-  width: 20px;
-  height: 20px;
-  background-color: var(--secondary-color); /* Dark green */
-  border-radius: 50%;
-  position: absolute;
-  left: 50%;
-  transform: translate(-50%, -60%); /* Appear above cards */
-  z-index: 3; /* Ensure dots are above cards */
-}
-
-/* Timeline Content */
-.timeline-content {
-  background: rgba(255, 255, 255, 0.8); /* Frosted glass */
-  backdrop-filter: blur(10px);
-  border-radius: 8px;
-  border: 1px solid rgba(255, 255, 255, 0.3);
-  padding: 1rem;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  z-index: 2;
-  max-width: 45%;
-}
-
-.timeline-date {
-  font-size: 14px;
-  color: var(--secondary-color);
-  margin-bottom: 0.5rem;
-  font-weight: bold;
-}
-
-.timeline-title {
-  font-size: 18px;
-  font-weight: bold;
-  margin-bottom: 0.5rem;
-}
-
-.timeline-description {
-  font-size: 14px;
-  line-height: 1.5;
-  color: #333;
-}
-
-/* Adjust Footer Padding */
-#timeline {
-  padding-bottom: 8rem; /* Ensure enough space above footer */
-}
-
-/* Mobile Responsiveness */
-@media screen and (max-width: 768px) {
-  #timeline:before {
-    left: 20px; /* Adjust bar position for mobile */
-  }
-
-  .timeline-event {
-    width: 100%;
-    flex-direction: row;
-    text-align: left;
-  }
-
-  .timeline-event .timeline-dot {
-    left: 20px; /* Align dots to the bar */
-    transform: translateX(0);
-  }
-
-  .timeline-event .timeline-content {
-    margin-left: 3rem;
-    margin-right: 0;
-    max-width: calc(100% - 4rem);
-  }
+  z-index: 3;
 }
 
 
-/* Project Cards */
+/*************************** Project Cards ***************************/
 .project-card {
   display: flex;
   flex-direction: column;
@@ -173,7 +62,7 @@ footer {
 .project-card img {
   object-fit: cover;
   height: 100px; /* Adjust the height as needed */
-  width: 100%;
+  width: 100px;
 }
 
 .project-card-content {
@@ -181,4 +70,55 @@ footer {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+}
+
+/*************************** Timeline ***************************/
+
+.timeline {
+  position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.timeline::after {
+  content: '';
+  position: absolute;
+  width: 6px;
+  background-color: #ddd;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  margin-left: -3px;
+}
+.timeline-container {
+  padding: 10px 40px;
+  position: relative;
+  background-color: inherit;
+  width: 50%;
+}
+.container-left {
+  left: 0;
+}
+.container-right {
+  left: 50%;
+}
+.timeline-container::after {
+  content: '';
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  right: -13px;
+  background-color: var(--primary-color);
+  border: 4px solid var(--secondary-color);
+  top: 15px;
+  border-radius: 50%;
+  z-index: 1;
+}
+.container-right::after {
+  left: -13px;
+}
+.content {
+  padding: 20px 30px;
+  background-color: white;
+  position: relative;
+  border-radius: 6px;
 }
