@@ -1,10 +1,35 @@
-(async function () {
+document.addEventListener('DOMContentLoaded', async () => {
   const grid = document.getElementById('projectsGrid');
   const q = document.getElementById('projectSearch');
-  const md = (txt) => DOMPurify.sanitize(marked.parse(txt || ''));
 
-  const res = await fetch('data/projects.json');
-  const items = await res.json();
+  if (!grid) {
+    // Defensive: if the projects grid is missing, log and abort to avoid uncaught exceptions
+    console.error('projects.js: could not find element with id "projectsGrid". Aborting render.');
+    return;
+  }
+
+  // Ensure markdown + sanitizer are available; fall back to simple text if not
+  const md = (txt) => {
+    try {
+      if (typeof DOMPurify !== 'undefined' && typeof marked !== 'undefined') {
+        return DOMPurify.sanitize(marked.parse(txt || ''));
+      }
+    } catch (e) {
+      console.warn('projects.js: markdown sanitization failed, falling back to plain text', e);
+    }
+    // naive fallback: escape < and >
+    return (txt || '').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+  };
+
+  let items = [];
+  try {
+    const res = await fetch('data/projects.json');
+    items = await res.json();
+  } catch (err) {
+    console.error('projects.js: failed to load data/projects.json', err);
+    grid.innerHTML = '<div class="col-12"><p class="text-muted">Could not load projects.</p></div>';
+    return;
+  }
 
   function render(list) {
     grid.innerHTML = list.map(p => `
@@ -24,7 +49,12 @@
         </article>
       </div>
     `).join('');
+
+    if (!list.length) {
+      grid.innerHTML = '<div class="col-12"><p class="text-muted">No projects found.</p></div>';
+    }
   }
+
   render(items);
 
   // search filter
@@ -38,4 +68,4 @@
     ].join(' ').toLowerCase().includes(term));
     render(filtered);
   });
-})();
+});
