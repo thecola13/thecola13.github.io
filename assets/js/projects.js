@@ -14,10 +14,12 @@ fetch('data/projects.json')
       projects.innerHTML += `
         <div class="col-md-4 mb-4">
           <div class="blur-card p-4 shadow-lg">
-            <img src="${project.image}" alt="${project.title}" class="img-fluid mb-3 project-image">
-            <h5>${project.title}</h5>
+            <div class="project-media mb-3">
+              <img src="${project.image}" alt="${project.title}" class="img-fluid project-image">
+            </div>
+            <h5 class="project-title mb-2">${project.title}</h5>
             <p class="project-description">${description}</p>
-            <div>${buttons}</div>
+            <div class="project-actions mt-3">${buttons}</div>
           </div>
         </div>`;
     });
