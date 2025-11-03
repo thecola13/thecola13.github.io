@@ -1,42 +1,41 @@
-fetch('data/projects.json')
-  .then(response => response.json())
-  .then(data => {
-    const projects = document.getElementById('projects');
+(async function () {
+  const grid = document.getElementById('projectsGrid');
+  const q = document.getElementById('projectSearch');
+  const md = (txt) => DOMPurify.sanitize(marked.parse(txt || ''));
 
-    data.forEach(project => {
-      const buttons = project.buttons.map(button => `
-        <a href="${button.link}" class="btn btn-success btn-sm" target="_blank">${button.text}</a>`).join('');
+  const res = await fetch('data/projects.json');
+  const items = await res.json();
 
-      const description = project.description.length > 100 ? 
-        `${project.description.substring(0, 100)}<span class="dots">...</span><span class="more" style="display: none;">${project.description.substring(100)}</span><button class="show-more btn btn-link btn-sm">Show more</button>` : 
-        project.description;
-
-      projects.innerHTML += `
-        <div class="col-md-4 mb-4">
-          <div class="blur-card p-4 shadow-lg">
-            <div class="project-media mb-3">
-              <img src="${project.image}" alt="${project.title}" class="img-fluid project-image">
-            </div>
-            <h5 class="project-title mb-2">${project.title}</h5>
-            <p class="project-description">${description}</p>
-            <div class="project-actions mt-3">${buttons}</div>
+  function render(list) {
+    grid.innerHTML = list.map(p => `
+      <div class="col">
+        <article class="card h-100 shadow-sm">
+          <div class="ratio ratio-16x9 bg-body-secondary">
+            ${p.image ? `<img src="${p.image}" alt="${p.name} thumbnail" class="object-fit-cover">` : ''}
           </div>
-        </div>`;
-    });
+          <div class="card-body d-flex flex-column">
+            <h3 class="h5 card-title">${p.name}</h3>
+            <div class="mb-2">${(p.tags||[]).map(t=>`<span class="badge text-bg-secondary">${t}</span>`).join(' ')}</div>
+            <div class="card-text small flex-grow-1">${md(p.descriptionMd || p.description || '')}</div>
+            <div class="mt-3 d-flex flex-wrap gap-2">
+              ${(p.links||[]).map(l => `<a class="btn btn-sm btn-primary" href="${l.href}" target="_blank" rel="noopener">${l.label}</a>`).join('')}
+            </div>
+          </div>
+        </article>
+      </div>
+    `).join('');
+  }
+  render(items);
 
-    document.querySelectorAll('.show-more').forEach(button => {
-      button.addEventListener('click', function() {
-        const dots = this.previousElementSibling.previousElementSibling;
-        const moreText = this.previousElementSibling;
-        if (dots.style.display === "none") {
-          dots.style.display = "inline";
-          this.innerHTML = "Show more";
-          moreText.style.display = "none";
-        } else {
-          dots.style.display = "none";
-          this.innerHTML = "Show less";
-          moreText.style.display = "inline";
-        }
-      });
-    });
+  // search filter
+  q?.addEventListener('input', () => {
+    const term = q.value.trim().toLowerCase();
+    if (!term) return render(items);
+    const filtered = items.filter(p => [
+      p.name,
+      (p.tags||[]).join(' '),
+      p.descriptionMd || p.description || ''
+    ].join(' ').toLowerCase().includes(term));
+    render(filtered);
   });
+})();

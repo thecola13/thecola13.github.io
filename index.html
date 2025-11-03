@@ -1,30 +1,51 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portfolio - Luca Colaci</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.5.0/font/bootstrap-icons.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="assets/css/style.css">
-</head>
-<body>
-  <header id="header" class="py-4 shadow-sm"></header>
-  <main class="container mt-5">
-    <section class="text-center mb-5">
-  <h1 class="display-4">Hi, I'm Cola</h1>
-      <div class="d-flex justify-content-center align-items-center">
-        <img src="assets/images/profile.jpg" alt="Profile Picture" class="rounded-circle me-4" style="width: 150px; height: 150px; object-fit: cover;">
-        <p class="lead text-secondary">
-          Artificial Intelligence Enthusiast | Master's Student at Bocconi University<br>
-          Passionate about AI, Machine Learning, and Student Representation.
-        </p>
+<!doctype html>
+<html lang="en" data-bs-theme="light">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="color-scheme" content="light dark">
+    <title>Luca Colaci — Personal Site</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'></svg>">
+    <!-- Bootstrap 5.3.x -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+    <!-- Custom styles -->
+    <link href="assets/css/styles.css" rel="stylesheet">
+    <!-- Theme script (system-aware, persisted) -->
+    <script defer src="assets/js/theme.js"></script>
+  </head>
+  <body class="d-flex flex-column min-vh-100">
+  <div id="header"></div>
+<main class="container py-5">
+  <div class="row align-items-center g-5">
+    <div class="col-12 col-lg-6">
+      <h1 class="display-5 fw-bold lh-1 mb-3">Hi, I'm <span class="text-primary">Luca Colaci</span></h1>
+      <p class="lead">I'm a last-year student at Bocconi University, pursuing a degree in Artificial Intelligence. Recently, I started liking Cryptography (and Secure Multi-Party Computation in particular): now I want to see where this will bring me.</p>
+      <div class="card border-0 shadow-sm" style="max-width:420px;">
+        <div class="card-body">
+          <a href="assets/files/Luca_Colaci_CV.pdf" class="btn btn-primary" target="_blank" rel="noopener">
+            <i class="bi bi-file-earmark-pdf me-2"></i>View / Download CV
+          </a>
+        </div>
       </div>
-      <a href="assets/files/Luca_Colaci_CV.pdf" download="Luca_Colaci_CV.pdf" class="btn btn-success mt-3">Download My CV</a>
-    </section>
-  </main>
-  <footer id="footer" class="text-center py-3 mt-auto"></footer>
+    </div>
+    <div class="col-12 col-lg-6">
+      <div class="card border-0 shadow-sm">
+          <div class="d-flex justify-content-center pt-4">
+            <img src="assets/images/profile.jpg" alt="Luca Colaci" class="rounded-circle img-fluid" style="width:180px; height:180px; object-fit:cover;">
+          </div>
+          <div class="card-body pt-3 text-center">
+            <h5 class="card-title visually-hidden">Contact</h5>
+            <p class="mb-0"><code class="fs-5 text-primary" aria-label="Email address">luca (dot) colaci (at) studbocconi (dot) it</code></p>
+          </div>
+      </div>
+    </div>
+  </div>
+</main>
+    <div id="footer" style="display:none"></div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
   <script src="assets/js/header-footer.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
-</body>
+  <script src="assets/js/common.js"></script>
+  </body>
 </html>

@@ -1,28 +1,31 @@
 [
-    {
-      "title": "An Approach to the Explanation of Annotator-level Differences in Toxicity Detection Through Irony",
-      "description": "My Bachelor's thesis project, investigating whether irony in messages could influence the toxicity rating given by graders belonging to different social groups. Awareded full marks.",
-      "image": "assets/images/toxrating_image.png",
-      "buttons": [
-        { "text": "Download PDF", "link": "assets/files/Thesis.pdf" }
-      ]
-    },
-    {
-      "title": "QR Code Generator",
-      "description": "Developed for the '20875 - Software Engineering' course, is a Python QR Code generator developed from scratch to be used through CLI inputs.",
-      "image": "assets/images/qrproj_image.png",
-      "buttons": [
-        { "text": "Github Project", "link": "https://github.com/thecola13/QR-gen-python" }
-      ]
-    },
-    {
-      "title": "Image Quantizer",
-      "description": "Assignment for '20874 - Algorithms for Optimisation and Inference' course, is a Python image quantizer that uses K-means clustering to reduce the number of colors in an image. Also, the problem can also be solved using a glpsol and the provided code.",
-      "image": "assets/images/imgquant_proj.png",
-      "buttons": [
-        { "text": "Github Project", "link": "https://github.com/thecola13/Optimization-Image_Quant" }
-      ]
-    }
+  {
+    "name": "An Approach to the Explanation of Annotator-level Differences in Toxicity Detection Through Irony",
+    "tags": ["Research"],
+    "descriptionMd": "My Bachelor's thesis project, investigating whether irony in messages could influence the toxicity rating given by graders belonging to different social groups. Awareded full marks.",
+    "image": "assets/images/toxrating_image.png",
+    "links": [
+      { "label": "Download", "href": "assets/files/Thesis.pdf" }
+    ]
+  },
+  {
+    "name": "QR Code Generator",
+    "tags": ["Python", "CLI"],
+    "descriptionMd": "Developed for the '20875 - Software Engineering' course, is a Python QR Code generator developed from scratch to be used through CLI inputs.",
+    "image": "assets/images/qrproj_image.png",
+    "links": [
+      { "label": "Code", "href": "https://github.com/thecola13/QR-gen-python" }
+    ]
+  },
+  {
+    "name": "Image Quantizer",
+    "tags": ["Python", "Image Processing"],
+    "descriptionMd": "Assignment for '20874 - Algorithms for Optimisation and Inference' course, is a Python image quantizer that uses K-means clustering to reduce the number of colors in an image. Also, the problem can also be solved using a glpsol and the provided code.",
+    "image": "assets/images/imgquant_proj.png",
+    "links": [
+      { "label": "Code", "href": "https://github.com/thecola13/Optimization-Image_Quant" }
+    ]
+  }
 
-  ]
+]
   

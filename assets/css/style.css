@@ -1,322 +1,62 @@
-:root {
-  /* Dark theme (default) - black/gray/green tones */
-  --primary-color: #0b0b0b; /* page background */
-  --secondary-color: #1fb764; /* accent green */
-  --text-dark: #e6f5ef; /* primary text on dark */
-  --muted-color: #9aa7a1; /* secondary text */
-  --card-bg-start: rgba(255,255,255,0.03);
-  --card-bg-end: rgba(255,255,255,0.01);
-  --card-border: rgba(255,255,255,0.06);
-  --card-text-color: #e6f5ef;
-}
+/* Root theme polish */
+:root { color-scheme: light dark; }
+html { scroll-behavior: smooth; transition: color .2s ease, background-color .2s ease; }
+.navbar .nav-link.active { font-weight: 600; }
 
-/* Light theme overrides */
-[data-theme="light"] {
-  --primary-color: #F7F3E3; /* Light cream */
-  --secondary-color: #214E34; /* Dark green */
-  --text-dark: #170312; /* Deep purple */
-  --muted-color: #6b6b6b;
-  --card-bg-start: rgba(255,255,255,0.92);
-  --card-bg-end: rgba(250,250,250,0.86);
-  --card-border: rgba(33,78,52,0.08);
-  --card-text-color: #2a2a2a;
-}
-
-*{
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-body {
-  background-color: var(--primary-color);
-  color: var(--text-dark);
-  font-family: 'Arial', sans-serif;
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
-  padding-bottom: 60px; /* Adjust based on footer height */
-}
-
-/* Smooth color transitions when toggling theme */
-html, body, header, footer, .blur-card, .project-title, .project-description {
-  transition: background-color 220ms ease, color 220ms ease, border-color 220ms ease, box-shadow 220ms ease;
-}
-
-header, footer {
-  background-color: var(--primary-color);
-  color: var(--text-dark);
-}
-
-/* Override Bootstrap utility classes that force light backgrounds/text */
-#header.bg-light, #footer.bg-light, #header.bg-light .container, #footer.bg-light {
-  background-color: var(--primary-color) !important;
-}
-
-/* Ensure header/footer links and brand follow theme colors */
-#header .nav-link,
-#header .navbar-brand,
-#header a,
-#header .text-dark {
-  color: var(--text-dark) !important;
-}
-
-#footer a, #footer {
-  color: var(--text-dark) !important;
-}
-
-/* General link color across the site */
-a, a:link, a:visited {
-  color: var(--secondary-color);
-}
-
-/* Outline button styling to match theme */
-.btn-outline-secondary {
-  color: var(--text-dark);
-  border-color: var(--card-border);
-}
-
-/* Make Bootstrap's .text-dark utility follow theme and be legible */
-.text-dark {
-  color: var(--text-dark) !important;
-}
-
-/* But force headings (page titles) to use accent color for clarity */
-h1.text-dark, h2.text-dark, h5.text-dark, .project-title.text-dark {
-  color: var(--secondary-color) !important;
-}
-
-#footer {
-  position: fixed;
-  bottom: 0;
-  width: 100%;
-  display: none;
-}
-
-
-h1, h2, h5 {
-  color: var(--secondary-color);
-}
-
-/* Header / footer theme-aware text */
-#header .text-dark,
-#header .nav-link,
-#header .navbar-brand,
-#footer {
-  color: var(--text-dark) !important;
-}
-
-/* Theme toggle button */
-/* Theme toggle button */
-#theme-toggle {
-  background: transparent;
-  color: var(--card-text-color);
-  border: 1px solid var(--card-border);
-  min-width: 38px;
-  min-height: 32px;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 6px;
-}
-
-#theme-toggle svg {
-  display: block;
-  width: 18px;
-  height: 18px;
-  color: var(--card-text-color);
-  fill: currentColor; /* ensure fill inherits currentColor in browsers */
-}
-
-/* Make bootstrap success buttons match accent color */
-.btn-success {
-  background-color: var(--secondary-color) !important;
-  border-color: var(--secondary-color) !important;
-  color: #fff !important;
-}
-
-.blur-card {
-  border-radius: 10px;
-}
-
-footer {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  z-index: 3;
-}
-
-
-/*************************** Project Cards ***************************/
-.project-card {
-  display: flex;
-  flex-direction: column;
-  height: 100%;
-}
-
-.project-card img {
-  object-fit: cover;
-  height: 100px; /* Adjust the height as needed */
-  width: 100px;
-}
-
-.project-card-content {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-
-/* Make project boxes equal height within each row */
-#projects .col-md-4 {
-  display: flex;           /* allow children to stretch */
-  align-items: stretch;    /* align columns so cards match height */
-}
-
-/* Card visual overhaul */
-#projects .blur-card {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  background: linear-gradient(180deg, var(--card-bg-start), var(--card-bg-end));
-  border-radius: 12px;
-  border: 1px solid var(--card-border);
-  padding: 1.25rem; /* keep Bootstrap p-4 consistent but slightly tighter */
-  transition: transform 160ms ease, box-shadow 160ms ease;
-}
-
-#projects .blur-card:hover {
-  transform: translateY(-6px);
-  box-shadow: 0 10px 24px rgba(31,183,100,0.06);
-}
-
-/* Media (image) */
-.project-media {
-  width: 100%;
-  display: block;
-  overflow: hidden;
-  border-radius: 10px;
-}
-
-.project-image {
-  width: 100%;
-  height: 160px; /* fixed visual height for uniformity */
-  object-fit: cover;
-  display: block;
-}
-
-/* Title */
-.project-title {
-  font-size: 1.05rem;
-  color: var(--secondary-color);
-  line-height: 1.2;
-}
-
-/* Description */
-.blur-card .project-description {
-  margin-top: 0.5rem;
-  color: var(--card-text-color);
-  font-size: 0.95rem;
-  /* Let description take available space so action buttons stay aligned */
-  flex: 1 1 auto;
-}
-
-/* Actions (buttons) */
-.project-actions {
-  display: flex;
-  gap: 0.5rem;
-  flex-wrap: wrap;
-  align-items: center;
-}
-
-.project-actions .btn {
-  padding: 0.35rem 0.6rem;
-  font-size: 0.85rem;
-}
-
-/* show-more link styling */
-.show-more {
-  padding: 0;
-  margin-left: 6px;
-  font-size: 0.85rem;
-  color: var(--secondary-color);
-}
-
-.dots {
-  color: #666;
-}
-
-/* Small refinements for small screens */
-@media (max-width: 576px) {
-  .project-image { height: 140px; }
-  .project-title { font-size: 1rem; }
-}
-
-/*************************** Timeline ***************************/
-
-.timeline {
+/* Timeline layout */
+.timeline-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
   position: relative;
-  max-width: 1200px;
-  margin: 0 auto;
+  padding-left: 1.25rem;
+  padding-right: .5rem;
+  padding-bottom: 2rem; /* prevents last card cropping */
 }
-.timeline::after {
-  content: '';
+@media (min-width: 768px){
+  .timeline-grid { padding-left: 2.25rem; }
+}
+/* Vertical spine */
+#timelineWrapper::before {
+  content: "";
   position: absolute;
-  width: 6px;
-  background-color: #ddd;
   top: 0;
-  bottom: 0;
-  left: 50%;
-  margin-left: -3px;
+  bottom: 0; /* full height so last card never crops */
+  left: .6rem;
+  width: 2px;
+  background-color: var(--bs-border-color);
 }
-.timeline-container {
-  padding: 10px 40px;
-  position: relative;
-  background-color: inherit;
-  width: 50%;
-}
-.container-left {
-  left: 0;
-}
-.container-right {
-  left: 50%;
-}
-.timeline-container::after {
-  content: '';
-  position: absolute;
-  width: 25px;
-  height: 25px;
-  right: -13px;
-  background-color: var(--primary-color);
-  border: 4px solid var(--secondary-color);
-  top: 15px;
-  border-radius: 50%;
-  z-index: 1;
-}
-.container-right::after {
-  left: -13px;
-}
-.content {
-  padding: 20px 30px;
-  /* Use theme-aware card background and text colors */
-  background: linear-gradient(180deg, var(--card-bg-start), var(--card-bg-end));
-  color: var(--card-text-color);
-  position: relative;
-  border-radius: 8px;
-  border: 1px solid var(--card-border);
-  box-shadow: 0 6px 18px rgba(0,0,0,0.06);
+@media (min-width: 768px){
+  #timelineWrapper::before { left: 1.2rem; }
 }
 
-/* Timeline content typography colors */
-.content h2 {
-  color: var(--secondary-color);
-  margin-top: 0.25rem;
+/* Timeline item */
+.timeline-item {
+  position: relative;
+  border-left: .25rem solid transparent;
 }
-.content h5 {
-  color: var(--muted-color);
-  margin-bottom: 0.25rem;
+.timeline-item::before {
+  content: "";
+  position: absolute;
+  left: -1.05rem;
+  top: 1rem;
+  width: .75rem;
+  height: .75rem;
+  border-radius: 50%;
+  background-color: var(--bs-primary);
+  outline: 2px solid var(--bs-body-bg);
+  box-shadow: 0 0 0 2px var(--bs-primary);
 }
-.content p {
-  color: var(--card-text-color);
-  line-height: 1.45;
-}
+[data-type="academic"] { border-left-color: var(--bs-info); }
+[data-type="academic"]::before { background-color: var(--bs-info); box-shadow: 0 0 0 2px var(--bs-info); }
+[data-type="personal"] { border-left-color: var(--bs-warning); }
+[data-type="personal"]::before { background-color: var(--bs-warning); box-shadow: 0 0 0 2px var(--bs-warning); }
+
+.card .object-fit-cover { object-fit: cover; }
+
+/* Cards */
+.card.shadow-sm { box-shadow: var(--bs-box-shadow-sm) !important; }
+
+/* Utilities */
+.badge + .badge { margin-left: .25rem; }
+.ratio > img { width: 100%; height: 100%; object-fit: cover; }
