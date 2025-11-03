@@ -1,0 +1,46 @@
+:root {
+  /* Override Bootstrap primary to a codish green */
+  --bs-primary: #2ecc71;
+  --bs-primary-rgb: 46,204,113;
+
+}
+
+/* Safety: ensure utility class picks up the new color */
+.text-primary {
+  color: var(--bs-primary) !important;
+}
+
+/* Buttons: ensure Bootstrap primary buttons use the codish green and have accessible focus/hover states */
+.btn-primary {
+  color: #fff;
+  background-color: var(--bs-primary) !important;
+  border-color: var(--bs-primary) !important;
+}
+.btn-primary:hover,
+.btn-primary:focus {
+  background-color: #27ae60 !important; /* slightly darker on hover/focus */
+  border-color: #27ae60 !important;
+  color: #fff;
+}
+.btn-primary:active,
+.btn-primary.active,
+.btn-check:checked + .btn-primary {
+  background-color: #1f8f4b !important; /* active state */
+  border-color: #1f8f4b !important;
+}
+.btn-primary:focus {
+  box-shadow: 0 0 0 .25rem rgba(var(--bs-primary-rgb), .25);
+}
+
+/* Outline variant: use primary green for border/text and darken on hover */
+.btn-outline-primary {
+  color: var(--bs-primary) !important;
+  border-color: var(--bs-primary) !important;
+}
+.btn-outline-primary:hover,
+.btn-outline-primary:focus {
+  color: #fff !important;
+  background-color: var(--bs-primary) !important;
+  border-color: var(--bs-primary) !important;
+}
+
