@@ -75,8 +75,8 @@
 /* Timeline layout and card accents */
 :root {
   /* Timeline accent colors (rgb form used for subtle colored shadows) */
-  --timeline-academic-rgb: 111,66,193; /* purple-ish */
-  --timeline-personal-rgb: 13,110,253;  /* bootstrap blue */
+  --timeline-academic-rgb: 163,0,0; /* red */
+  --timeline-personal-rgb: 2,40,100;  /* royal blue */
 }
 
 /* Grid wrapper for timeline cards: single column with comfortable vertical gap */
