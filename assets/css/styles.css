@@ -72,3 +72,44 @@
   color: var(--bs-primary) !important;
 }
 
+/* Timeline layout and card accents */
+:root {
+  /* Timeline accent colors (rgb form used for subtle colored shadows) */
+  --timeline-academic-rgb: 111,66,193; /* purple-ish */
+  --timeline-personal-rgb: 13,110,253;  /* bootstrap blue */
+}
+
+/* Grid wrapper for timeline cards: single column with comfortable vertical gap */
+.timeline-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.25rem; /* increases spacing between cards */
+  margin-top: 1rem;
+}
+
+/* Timeline item base styling: replace/augment Bootstrap shadow-sm with a slightly larger, softer shadow and a colored left accent */
+.timeline-item {
+  border-left: 4px solid transparent;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.06); /* soft neutral shadow */
+  transition: transform .12s ease, box-shadow .12s ease;
+}
+.timeline-item:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 18px 40px rgba(0,0,0,0.08);
+}
+
+/* Type-specific accents - colored left border + subtle colored glow */
+.timeline-item[data-type="academic"] {
+  border-left-color: rgb(var(--timeline-academic-rgb));
+  box-shadow: 0 10px 24px rgba(var(--timeline-academic-rgb), 0.06);
+}
+.timeline-item[data-type="personal"] {
+  border-left-color: rgb(var(--timeline-personal-rgb));
+  box-shadow: 0 10px 24px rgba(var(--timeline-personal-rgb), 0.06);
+}
+
+/* Make sure smaller cards / content have comfortable spacing inside */
+.timeline-item .card-body {
+  padding: 1rem 1rem;
+}
+
