@@ -1,8 +1,8 @@
 [
   {
-    "name": "An Approach to the Explanation of Annotator-level Differences in Toxicity Detection Through Irony",
+    "name": "An Approach to the Explanation of Annotator-Level Differences in Toxicity Detection Through Irony",
     "tags": ["Research"],
-    "descriptionMd": "My Bachelor's thesis project, investigating whether irony in messages could influence the toxicity rating given by graders belonging to different social groups. Awareded full marks.",
+    "descriptionMd": "My Bachelor's thesis project, investigating whether irony in messages could influence the toxicity rating given by graders belonging to different social groups. Awarded full marks.",
     "image": "assets/images/toxrating_image.png",
     "links": [
       { "label": "Download", "href": "assets/files/Thesis.pdf" }
@@ -11,7 +11,7 @@
   {
     "name": "QR Code Generator",
     "tags": ["Python", "CLI"],
-    "descriptionMd": "Developed for the '20875 - Software Engineering' course, is a Python QR Code generator developed from scratch to be used through CLI inputs.",
+    "descriptionMd": "Developed for the '20875 - Software Engineering' course, is a Python QR Code generator developed from scratch to be used through CLI inputs. Awarded full marks.",
     "image": "assets/images/qrproj_image.png",
     "links": [
       { "label": "Code", "href": "https://github.com/thecola13/QR-gen-python" }
@@ -20,12 +20,21 @@
   {
     "name": "Image Quantizer",
     "tags": ["Python", "Image Processing"],
-    "descriptionMd": "Assignment for '20874 - Algorithms for Optimisation and Inference' course, is a Python image quantizer that uses K-means clustering to reduce the number of colors in an image. Also, the problem can also be solved using a glpsol and the provided code.",
+    "descriptionMd": "Assignment for '20874 - Algorithms for Optimisation and Inference' course, is a Python image quantizer that uses K-means clustering to reduce the number of colors in an image. Also, the problem can be solved using `glpsol` and the provided code.",
     "image": "assets/images/imgquant_proj.png",
     "links": [
       { "label": "Code", "href": "https://github.com/thecola13/Optimization-Image_Quant" }
     ]
+  },
+  {
+    "name": "Mutation Classifier for TP53",
+    "tags": ["Python", "Transcriptomics"],
+    "descriptionMd": "Assignment for '20880 - Machine Learning Lab' course, contains a thorough analysis on TCGA and CCLE datasets regarding TP53 mutations.",
+    "image": "assets/images/genomics.png",
+    "links": [
+      { "label": "Code", "href": "https://github.com/thecola13/tp53-mutation-classifier" },
+      { "label": "Report", "href": "https://lucacolaci.notion.site/20880-Machine-Learning-Lab-180cdc18db9a8031a5b5da2655c8ebc4?source=copy_link"}
+    ]
   }
-
 ]
   
