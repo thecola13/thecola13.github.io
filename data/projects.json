@@ -32,7 +32,8 @@
     "descriptionMd": "Assignment for '20880 - Machine Learning Lab' course, contains a thorough analysis on TCGA and CCLE datasets regarding TP53 mutations.",
     "image": "assets/images/genomics.png",
     "links": [
-      { "label": "Code", "href": "https://github.com/thecola13/tp53-mutation-classifier" }
+      { "label": "Code", "href": "https://github.com/thecola13/tp53-mutation-classifier" },
+      { "label": "Report", "href": "https://lucacolaci.notion.site/20880-Machine-Learning-Lab-180cdc18db9a8031a5b5da2655c8ebc4?source=copy_link"}
     ]
   }
 ]
