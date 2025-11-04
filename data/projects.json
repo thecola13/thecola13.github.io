@@ -25,7 +25,15 @@
     "links": [
       { "label": "Code", "href": "https://github.com/thecola13/Optimization-Image_Quant" }
     ]
+  },
+  {
+    "name": "Mutation Classifier for TP53",
+    "tags": ["Python", "Transcriptomics"],
+    "descriptionMd": "Assignment for '20880 - Machine Learning Lab' course, contains a thorough analysis on TCGA and CCLE datasets regarding TP53 mutations.",
+    "image": "assets/images/genomics.png",
+    "links": [
+      { "label": "Code", "href": "https://github.com/thecola13/tp53-mutation-classifier" }
+    ]
   }
-
 ]
   
