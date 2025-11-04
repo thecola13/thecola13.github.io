@@ -1,5 +1,25 @@
 [
   {
+    "name": "saLM-1: Self-Aware Language Model Ensamble",
+    "tags": ["Research", "NLP", "Transfomers"],
+    "descriptionMd": "A collaborative project for the '20879 - Language Technology' course, implementing an ensemble LLM with dynamic routing of token generation.",
+    "image": "assets/images/salm1.jpg",
+    "links": [
+      { "label": "Paper", "href": "https://bsmachinelearning.com/assets/reports/250625_saLM_1.pdf" },
+      { "label": "Code", "href": "https://github.com/alefrabel/saLM-1"}
+    ]
+  },
+  {
+    "name": "Crowd Counting through Density Map Estimation",
+    "tags": ["Research", "Computer Vision"],
+    "descriptionMd": "A collaborative project for the 'Crowd Counting through Density Map Estimation' course, studying the task of Crowd Counting and how the receptive field of a model influences its accuracy.",
+    "image": "assets/images/crowd_density_cover.jpg",
+    "links": [
+      { "label": "Paper", "href": "https://bsmachinelearning.com/assets/reports/Crowd_Flow_Estimation.pdf" },
+      { "label": "Code", "href": "https://github.com/VittorioRossi/crowd-flow-estimation"}
+    ]
+  },
+  {
     "name": "An Approach to the Explanation of Annotator-Level Differences in Toxicity Detection Through Irony",
     "tags": ["Research"],
     "descriptionMd": "My Bachelor's thesis project, investigating whether irony in messages could influence the toxicity rating given by graders belonging to different social groups. Awarded full marks.",
