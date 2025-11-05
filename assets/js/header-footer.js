@@ -67,6 +67,19 @@
 						a.classList.add('active', 'text-primary', 'fw-semibold');
 					}
 				});
+
+				// If we're on the homepage, also colour the brand "Cola" to match the site accent
+				if (current === 'index.html') {
+					try {
+						const brand = document.querySelector('.navbar .navbar-brand');
+						if (brand) {
+							const label = brand.querySelector('.fw-semibold');
+							if (label) label.classList.add('text-primary');
+						}
+					} catch (e) {
+						/* non-fatal */
+					}
+				}
 			} catch (e) {
 				// non-fatal
 				console.warn('setActiveNav failed', e && e.message);
