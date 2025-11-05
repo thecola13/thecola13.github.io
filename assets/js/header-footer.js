@@ -52,6 +52,26 @@
 			});
 			sw._hf_bound = true;
 		}
+
+		// Highlight the current page's nav link (adds visual emphasis for active page)
+		(function setActiveNav() {
+			try {
+				const links = document.querySelectorAll('.navbar .nav-link');
+				// Determine current file name (fallback to index.html for root)
+				const current = (location.pathname.split('/').pop() || 'index.html').toLowerCase();
+				links.forEach(a => {
+					const href = a.getAttribute('href');
+					if (!href) return;
+					const target = href.split('/').pop().toLowerCase();
+					if (target === current) {
+						a.classList.add('active', 'text-primary', 'fw-semibold');
+					}
+				});
+			} catch (e) {
+				// non-fatal
+				console.warn('setActiveNav failed', e && e.message);
+			}
+		})();
 	} catch (err) {
 		console.error('Could not inject header:', err && err.message);
 	}

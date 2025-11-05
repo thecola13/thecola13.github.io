@@ -167,3 +167,12 @@
 .playlist-media .playlist-iframe { width: 100%; height: 100%; display: block; border: 0; }
 
 
+
+/* About section styles */
+#about { margin-top: 2rem; }
+
+@media (min-width: 992px) {
+  #about { margin-top: 3rem; }
+}
+
+
