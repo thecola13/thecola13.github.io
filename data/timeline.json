@@ -3,7 +3,7 @@
     "date": "2025-09-21",
     "title": "Master Thesis in Secure Multi-Party Computation",
     "type": "academic",
-    "descriptionMd": "Started collaborating with Adi Akavia (University of Haifa) and Zohar Yakhini (Weizmann Institute of Science) on a project regarding SMPC for linear regression.",
+    "descriptionMd": "Started collaborating with [Adi Akavia](https://sites.google.com/view/akavia) (University of Haifa) and [Zohar Yakhini](https://www.runi.ac.il/en/faculty/zyakhini) (Weizmann Institute of Science) on a project regarding SMPC for linear regression, under the supervision of prof. [Alon Rosen](https://www.alonrosen.net/).",
     "links": []
   },
   {
@@ -14,10 +14,27 @@
     "links": []
   },
   {
+    "date": "2025-07-08",
+    "title": "Year 3 of Summer School @ Bocconi (this time with University students!)",
+    "type": "academic",
+    "descriptionMd": "Worked as a Student Ambassador for the Bocconi Summer School for Undergraduate students: this year, I tutored the 'Recent Trends in AI' course by profs. [Laura Sanità](https://cs.unibocconi.eu/people/laura-sanita) & [Luca Biggio](https://faculty.unibocconi.it/lucabiggio/).",
+    "links": []
+  },
+  {
     "date": "2025-03-01",
     "title": "Selected for Visiting Student Initiative",
     "type": "academic",
-    "descriptionMd": "Selected to participate in the Visiting Student initiative. Currently working with prof. Francesca Buffa on transcriptional signatures of hypoxia in cancer cells.",
+    "descriptionMd": "Selected to participate in the Visiting Student initiative. Currently working with prof. [Francesca Buffa](https://cs.unibocconi.eu/people/francesca-buffa) on transcriptional signatures of hypoxia in cancer cells.",
+    "links": [{
+      "label": "VSI Program",
+      "href": "https://bidsa.unibocconi.eu/people/visiting-students-initiative"
+    }]
+  },
+  {
+    "date": "2024-10-14",
+    "title": "Elected as Student Representative for the AI program",
+    "type": "personal",
+    "descriptionMd": "I was elected Class and Course Representative for my Master program, sitting in the Course Committee and helping shape the curriculum.",
     "links": []
   },
   {
@@ -25,20 +42,44 @@
     "title": "Started the MSc in AI",
     "type": "academic",
     "descriptionMd": "Started my Master's Degree in Artificial Intelligence at Bocconi University.",
+    "links": [
+      {
+        "label": "Program",
+        "href": "https://www.unibocconi.it/en/programs/master-science/artificial-intelligence"
+      }
+    ]
+  },
+  {
+    "date": "2024-07-08",
+    "title": "Year 2 of Summer School @ Bocconi",
+    "type": "personal",
+    "descriptionMd": "Worked as a Student Ambassador for the Bocconi Summer School for High School students: this year, I tutored the 'Machine Learning & AI' course by profs. [Riccardo Zecchina](https://cs.unibocconi.eu/people/riccardo-zecchina), [Andrea Tangherloni](https://cs.unibocconi.eu/people/andrea-tangherloni), [Luca Saglietti](https://faculty.unibocconi.it/lucasaglietti/) & [Debora Nozza](https://faculty.unibocconi.it/deboranozza/).",
     "links": []
   },
   {
-    "date": "2024-07-01",
+    "date": "2024-07-12",
     "title": "Graduating from BEMACS",
     "type": "academic",
-    "descriptionMd": "Graduated from my Bachelor's degree with a thesis on the impact of irony in toxicity rating by raters belonging to different social groups. Final grade: 110 cum Laude.",
-    "links": []
+    "descriptionMd": "Graduated from my Bachelor's degree with a thesis on the impact of irony in toxicity rating by raters belonging to different social groups, under the supervision of prof. [Kai Zhu](https://kaizhu.me/). Final grade: 110 cum Laude.",
+    "links": [
+      {
+        "label": "Thesis",
+        "href": "assets/files/Thesis.pdf"
+      }
+    ]
   },
   {
     "date": "2024-01-04",
     "title": "Exchange Program at Georgia Tech",
     "type": "academic",
     "descriptionMd": "Attend a semester at Georgia Institute of Technology in Atlanta (GA). GPA: 4.0/4.",
+    "links": []
+  },
+  {
+    "date": "2023-07-03",
+    "title": "Year 1 of Summer School @ Bocconi",
+    "type": "personal",
+    "descriptionMd": "Worked as a Student Ambassador for the Bocconi Summer School for High School students: this year, I tutored the 'Data Science' course by profs. [Omiros Papaspiliopoulos](https://faculty.unibocconi.eu/omirospapaspiliopoulos/) & [Pieralberto Guarniero](https://faculty.unibocconi.eu/pieralbertoguarniero/), and the 'Computer Coding' course by prof. [Massimo Ballerini](https://faculty.unibocconi.it/massimoballerini/).",
     "links": []
   },
   {
@@ -53,6 +94,13 @@
     "title": "Foundation of Astra Bocconi",
     "type": "personal",
     "descriptionMd": "Founded a new student representatives group in my University.",
+    "links": [{ "label": "Astra Bocconi", "href": "https://www.astrabocconi.com/" }]
+  },
+  {
+    "date": "2021-10-14",
+    "title": "Elected as Student Representative for the BEMACS program",
+    "type": "personal",
+    "descriptionMd": "I was elected as Class Representative every year, and sitted in the Course Committee during my second and third years.",
     "links": []
   },
   {
@@ -60,7 +108,12 @@
     "title": "Started BEMACS",
     "type": "academic",
     "descriptionMd": "Began my undergraduate studies in the Bachelor of Economics, Management and Computer Science (BEMACS) at Bocconi University. GPA: 29/30.",
-    "links": []
+    "links": [
+      {
+        "label": "Program",
+        "href": "https://www.unibocconi.it/en/programs/bachelor-science/economics-management-and-computer-science"
+      }
+    ]
   },
   {
     "date": "2002-02-13",
