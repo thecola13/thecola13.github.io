@@ -1,0 +1,150 @@
+[
+    {
+        "title": "41047 - Computer Science II",
+        "category": "Bocconi MSc",
+        "year": "2025-2026",
+        "type": "Notion",
+        "link": "https://lucacolaci.notion.site/41047-Computer-Science-II-25fcdc18db9a80cd947bf65af9d6d6fc?pvs=25",
+        "description": "PhD level course by Alon Rosen taken under the Higher Level Courses (HLC) program (merit based)"
+    },
+    {
+        "title": "20875 - Software Engineering",
+        "category": "Bocconi MSc",
+        "year": "2024-2025",
+        "type": "Notion",
+        "link": "https://lucacolaci.notion.site/20875-Software-Engineering-4726edd2e45f47709c8f97ef6afaec21?pvs=25",
+        "description": "Course by Laurent Poirrier"
+    },
+    {
+        "title": "20874 - Algorithms for Optimization and Inference",
+        "category": "Bocconi MSc",
+        "year": "2024-2025",
+        "type": "Notion",
+        "link": "https://lucacolaci.notion.site/20874-Algorithms-for-Optimization-and-Inference-19249866188745598929b11bfc95b95c?pvs=25",
+        "description": "Course by Laura Sanità"
+    },
+    {
+        "title": "20872 - Mathematical Methods in CS",
+        "category": "Bocconi MSc",
+        "year": "2024-2025",
+        "type": "Notion",
+        "link": "https://lucacolaci.notion.site/20872-Mathematical-Methods-in-CS-1f98582c01394171974278af49f43a05?pvs=25",
+        "description": "Course by Elia Bruè"
+    },
+    {
+        "title": "20876 - Deep Learning and Reinforcement Learning",
+        "category": "Bocconi MSc",
+        "year": "2024-2025",
+        "type": "Notion",
+        "link": "https://lucacolaci.notion.site/20876-dl-rl?pvs=25",
+        "description": "Course by Andrea Tangherloni and Andrea Celli"
+    },
+    {
+        "title": "30416 - Big Data and Databases",
+        "category": "Bocconi BSc",
+        "year": "2023-2024",
+        "type": "Notion",
+        "link": "https://lucacolaci.notion.site/30416-Big-Data-and-Databases-125956d205ca42509204771dd411873f?pvs=25",
+        "description": "Course by Luca Molteni, Alessandro Rezzani & Daniele Tonini"
+    },
+    {
+        "title": "30418 - Game Theory (Computational Micro Module 1)",
+        "category": "Bocconi BSc",
+        "year": "2023-2024",
+        "type": "Notion",
+        "link": "https://lucacolaci.notion.site/30418-Game-Theory-Computational-Micro-Module-1-6889675b03544ad6889ede608a23d101?pvs=25",
+        "description": "Course by Tangreng Feng"
+    },
+    {
+        "title": "30420 - Marketing Analytics",
+        "category": "Bocconi BSc",
+        "year": "2023-2024",
+        "type": "Notion",
+        "link": "https://lucacolaci.notion.site/30420-Marketing-Analytics-31fb71b916824ebda2670272fd320c7d?pvs=25",
+        "description": "Course by Jessica Jumee Kim"
+    },
+    {
+        "title": "30408 - Statistics 2",
+        "category": "Bocconi BSc",
+        "year": "2022-2023",
+        "type": "Notion",
+        "link": "https://lucacolaci.notion.site/30408-Statistics-2-ac55c088e447438dada4f30dde1bc700?pvs=25",
+        "description": "Course by Antonio Lijoi"
+    },
+    {
+        "title": "30412 - Machine Learning",
+        "category": "Bocconi BSc",
+        "year": "2022-2023",
+        "type": "Notion",
+        "link": "https://lucacolaci.notion.site/30412-Machine-Learning-4ef9e47d0df94d009507397ea8c21a5e?pvs=25",
+        "description": "Course by Andrea Celli"
+    },
+    {
+        "title": "30413 - Econometrics",
+        "category": "Bocconi BSc",
+        "year": "2022-2023",
+        "type": "Notion",
+        "link": "https://lucacolaci.notion.site/30413-Econometrics-0244f76f83ec489392448717daf75a03?pvs=25",
+        "description": "Course by Massimiliano Marcellino"
+    },
+    {
+        "title": "30519 - EU Law and Data Economy",
+        "category": "Bocconi BSc",
+        "year": "2022-2023",
+        "type": "Notion",
+        "link": "https://lucacolaci.notion.site/30519-EU-Law-and-Data-Economy-0e196244d1d74aaf809ed58a956d6a85?pvs=25",
+        "description": "Course by Maria Lillà Montagnini"
+    },
+    {
+        "title": "30509 - Computer Programming",
+        "category": "Bocconi BSc",
+        "year": "2022-2023",
+        "type": "Notion",
+        "link": "https://lucacolaci.notion.site/30509-Computer-Programming-e21e4a31e18841a2aa96b0b3be7bc5fa?pvs=25",
+        "description": "Course by Luca Saglietti"
+    },
+    {
+        "title": "30409 - Macroeconomics",
+        "category": "Bocconi BSc",
+        "year": "2022-2023",
+        "type": "Notion",
+        "link": "https://lucacolaci.notion.site/30409-Macroeconomics-e5edfc1cc4094bfd9f8a57181ad38b6a?pvs=25",
+        "description": "Course by Luigi Iovino"
+    },
+    {
+        "title": "MGT 3510 - Management of Technology",
+        "category": "Other",
+        "institution": "Georgia Institute of Technology",
+        "year": "Spring 2024",
+        "type": "Notion",
+        "link": "https://lucacolaci.notion.site/MGT-3510-Management-of-Technology-4b8e3a62b0f943c78e27c0d9186d0379?pvs=25",
+        "description": "Course by Tim Martin taken during my Exchange semester at Georgia Tech"
+    },
+    {
+        "title": "MGT 3101 - Organizational Behavior",
+        "category": "Other",
+        "institution": "Georgia Institute of Technology",
+        "year": "Spring 2024",
+        "type": "Notion",
+        "link": "https://lucacolaci.notion.site/MGT-3101-Organizational-Behavior-f0eda5e2481c4658bfc155342a1b91fc?pvs=25",
+        "description": "Course by Hyunsun Park taken during my Exchange semester at Georgia Tech"
+    },
+    {
+        "title": "MGT 3745 - Business Programming",
+        "category": "Other",
+        "institution": "Georgia Institute of Technology",
+        "year": "Spring 2024",
+        "type": "Notion",
+        "link": "https://lucacolaci.notion.site/MGT-3745-Business-Programming-eff62d5531df4b98ad691ffc5eb16dc1?pvs=25",
+        "description": "Course by John McSwain taken during my Exchange semester at Georgia Tech"
+    },
+    {
+        "title": "ECON 3161 - Econometric Analysis",
+        "category": "Other",
+        "institution": "Georgia Institute of Technology",
+        "year": "Spring 2024",
+        "type": "Notion",
+        "link": "https://lucacolaci.notion.site/ECON-3161-Econometric-Analysis-89363db90bbb4fec990909fa356d3138?pvs=25",
+        "description": "Course by Roberto Gonzalez taken during my Exchange semester at Georgia Tech"
+    }
+]
