@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en" data-bs-theme="light">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="color-scheme" content="light dark">
+    <title>Cola — Suggestions</title>
+    <link rel="icon" type="image/svg+xml" sizes="any" href="/assets/images/favicon.svg">
+    <!-- Bootstrap 5.3.x -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+    <!-- Custom styles -->
+    <link href="assets/css/styles.css" rel="stylesheet">
+    <!-- Theme script (system-aware, persisted) -->
+    <script defer src="assets/js/theme.js"></script>
+
+    <!-- Google tag for analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-TJEZ6JJ4WH"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-TJEZ6JJ4WH');
+    </script>
+
+</head>
+
+<body class="d-flex flex-column min-vh-100">
+    <!-- Header include -->
+    <div id="header"></div>
+
+    <main class="container py-5 flex-grow-1">
+        <h1 class="h2 m-0 d-flex align-items-center gap-2 mb-4"><i class="bi bi-lightbulb" aria-hidden="true"></i>
+            Suggestions</h1>
+        <p class="text-body-secondary mb-4">A collection of sources, journals, videos, and other things I find
+            interesting.</p>
+
+        <!-- Filter Section -->
+        <div class="mb-5">
+            <h5 class="mb-3">Filter by tags:</h5>
+            <div id="tags-container" class="d-flex flex-wrap gap-2">
+                <!-- Tags will be injected here -->
+            </div>
+        </div>
+
+        <!-- Suggestions Grid -->
+        <div id="suggestions-container" class="row g-4">
+            <!-- Cards will be injected here -->
+        </div>
+
+    </main>
+
+    <!-- Footer placeholder -->
+    <div id="footer" style="display:none"></div>
+
+    <!-- Load Bootstrap and shared header/footer + common scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/header-footer.js"></script>
+    <script src="assets/js/common.js"></script>
+    <!-- Page specific script -->
+    <script src="assets/js/suggestions.js"></script>
+</body>
+
+</html>
