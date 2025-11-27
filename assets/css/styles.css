@@ -1,9 +1,38 @@
 :root {
   /* Override Bootstrap primary to a codish green */
   --bs-primary: #2ecc71;
-  --bs-primary-rgb: 46,204,113;
-
+  --bs-primary-rgb: 46,
+    204,
+    113;
 }
+
+html {
+  scroll-behavior: smooth;
+  transition: color .2s ease, background-color .2s ease;
+}
+
+.navbar .nav-link.active {
+  font-weight: 600;
+}
+
+/* Vertical spine for timeline (optional, but good to have) */
+#timelineWrapper {
+  position: relative;
+}
+
+#timelineWrapper::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: .6rem;
+  width: 2px;
+  background-color: var(--bs-border-color);
+  display: none;
+  /* Hidden by default, maybe show on larger screens if desired, but let's keep it hidden if it conflicts with cards */
+}
+
+/* Actually, let's omit the spine for now as the cards are full width in the current design */
 
 /* Safety: ensure utility class picks up the new color */
 .text-primary {
@@ -16,18 +45,23 @@
   background-color: var(--bs-primary) !important;
   border-color: var(--bs-primary) !important;
 }
+
 .btn-primary:hover,
 .btn-primary:focus {
-  background-color: #27ae60 !important; /* slightly darker on hover/focus */
+  background-color: #27ae60 !important;
+  /* slightly darker on hover/focus */
   border-color: #27ae60 !important;
   color: #fff;
 }
+
 .btn-primary:active,
 .btn-primary.active,
-.btn-check:checked + .btn-primary {
-  background-color: #1f8f4b !important; /* active state */
+.btn-check:checked+.btn-primary {
+  background-color: #1f8f4b !important;
+  /* active state */
   border-color: #1f8f4b !important;
 }
+
 .btn-primary:focus {
   box-shadow: 0 0 0 .25rem rgba(var(--bs-primary-rgb), .25);
 }
@@ -37,6 +71,7 @@
   color: var(--bs-primary) !important;
   border-color: var(--bs-primary) !important;
 }
+
 .btn-outline-primary:hover,
 .btn-outline-primary:focus {
   color: #fff !important;
@@ -52,6 +87,7 @@
   background-color: var(--bs-primary) !important;
   border-color: var(--bs-primary) !important;
 }
+
 .form-check-input:focus {
   box-shadow: 0 0 0 .25rem rgba(var(--bs-primary-rgb), .25) !important;
 }
@@ -63,7 +99,8 @@
 
 /* Theme icon (sun/moon) — neutral in light mode, green in dark mode */
 #themeIcon {
-  color: #6c757d; /* neutral / muted gray for light mode */
+  color: #6c757d;
+  /* neutral / muted gray for light mode */
   transition: color .15s ease;
 }
 
@@ -75,37 +112,45 @@
 /* Timeline layout and card accents */
 :root {
   /* Timeline accent colors (rgb form used for subtle colored shadows) */
-  --timeline-academic-rgb: 163,0,0; /* red */
-  --timeline-personal-rgb: 2,40,100;  /* royal blue */
+  --timeline-academic-rgb: 163, 0, 0;
+  /* red */
+  --timeline-personal-rgb: 2, 40, 100;
+  /* royal blue */
 }
 
 /* Grid wrapper for timeline cards: single column with comfortable vertical gap */
 .timeline-grid {
   display: grid;
   grid-template-columns: 1fr;
-  gap: 1.25rem; /* increases spacing between cards */
+  gap: 1.25rem;
+  /* increases spacing between cards */
   margin-top: 1rem;
 }
 
-/* Timeline item base styling: replace/augment Bootstrap shadow-sm with a slightly larger, softer shadow and a colored left accent */
+/* Timeline item base styling: inherits from .custom-card, adds colored left accent via pseudo-element */
 .timeline-item {
-  border-left: 4px solid transparent;
-  box-shadow: 0 8px 20px rgba(0,0,0,0.06); /* soft neutral shadow */
-  transition: transform .12s ease, box-shadow .12s ease;
-}
-.timeline-item:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 18px 40px rgba(0,0,0,0.08);
+  position: relative;
+  /* Ensure content is above the band if needed, though usually fine */
 }
 
-/* Type-specific accents - colored left border + subtle colored glow */
-.timeline-item[data-type="academic"] {
-  border-left-color: rgb(var(--timeline-academic-rgb));
-  box-shadow: 0 10px 24px rgba(var(--timeline-academic-rgb), 0.06);
+.timeline-item::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 6px;
+  background-color: transparent;
+  z-index: 1;
 }
-.timeline-item[data-type="personal"] {
-  border-left-color: rgb(var(--timeline-personal-rgb));
-  box-shadow: 0 10px 24px rgba(var(--timeline-personal-rgb), 0.06);
+
+/* Type-specific accents - colored left band */
+.timeline-item[data-type="academic"]::before {
+  background-color: rgb(var(--timeline-academic-rgb));
+}
+
+.timeline-item[data-type="personal"]::before {
+  background-color: rgb(var(--timeline-personal-rgb));
 }
 
 /* Make sure smaller cards / content have comfortable spacing inside */
@@ -119,60 +164,67 @@
   gap: 1.25rem;
   grid-template-columns: 1fr;
 }
+
 @media (min-width: 768px) {
-  .playlist-grid { grid-template-columns: 1fr 1fr; }
-}
-@media (min-width: 1100px) {
-  .playlist-grid { grid-template-columns: 1fr 1fr 1fr; }
+  .playlist-grid {
+    grid-template-columns: 1fr 1fr;
+  }
 }
 
-.playlist-card.card {
+@media (min-width: 1100px) {
+  .playlist-grid {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+/* Unified Card Style */
+.custom-card {
   border: 1px solid rgba(var(--bs-primary-rgb), 0.04);
   border-radius: 1rem;
   overflow: hidden;
   background: color-mix(in srgb, var(--bs-body-bg) 92%, white);
   transition: transform .15s ease, box-shadow .15s ease;
-  box-shadow: 0 8px 22px rgba(0,0,0,0.06);
+  box-shadow: 0 8px 22px rgba(0, 0, 0, 0.06);
 }
-.playlist-card.card:hover {
-  transform: translateY(-8px);
-  box-shadow: 0 24px 48px rgba(0,0,0,0.10);
-}
-.playlist-card .card-body {
-  padding: 1rem;
-}
-.playlist-meta { display:flex; flex-wrap: wrap; align-items: baseline; gap:.5rem; margin-bottom:.5rem; }
-.playlist-title { font-weight: 600; }
-.playlist-desc { margin:.25rem 0 .5rem; color: var(--bs-body-color); }
-.playlist-iframe { width: 100%; height: 100%; border: 0; display: block; }
 
-/* media wrapper for responsive Spotify embeds using Bootstrap ratio */
+.custom-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 24px 48px rgba(0, 0, 0, 0.10);
+}
+
+.custom-card .card-body {
+  padding: 1.25rem;
+}
+
+.custom-card .badge {
+  font-weight: 500;
+}
+
+/* Playlist specific overrides if needed (e.g. media container) */
 .playlist-media {
   border-radius: 1rem 1rem 0 0;
   overflow: hidden;
   position: relative;
-  /* match the card background so any exposed areas appear grey instead of white */
   background: color-mix(in srgb, var(--bs-body-bg) 92%, white);
+  height: 140px;
 }
 
-/* Smaller screens: compact embeds; large screens: use Spotify's full embed height to avoid UI cropping */
-.playlist-media { height: 140px; }
-@media (min-width: 768px) { .playlist-media { height: 160px; } }
-@media (min-width: 1100px) { .playlist-media { height: 352px; } }
-
-/* Ensure iframe fills the media container exactly and has matching top radii */
-.playlist-media .playlist-iframe { width: 100%; height: 100%; display: block; border: 0; border-radius: 1rem 1rem 0 0; }
-
-/* Ensure iframe fills the media container exactly */
-.playlist-media .playlist-iframe { width: 100%; height: 100%; display: block; border: 0; }
-
-
-
-/* About section styles */
-#about { margin-top: 2rem; }
-
-@media (min-width: 992px) {
-  #about { margin-top: 3rem; }
+@media (min-width: 768px) {
+  .playlist-media {
+    height: 160px;
+  }
 }
 
+@media (min-width: 1100px) {
+  .playlist-media {
+    height: 352px;
+  }
+}
 
+.playlist-media .playlist-iframe {
+  width: 100%;
+  height: 100%;
+  display: block;
+  border: 0;
+  border-radius: 1rem 1rem 0 0;
+}

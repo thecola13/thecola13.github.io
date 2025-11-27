@@ -7,25 +7,29 @@
   const res = await fetch('data/timeline.json');
   const items = await res.json();
   // sort by descending date
-  items.sort((a,b) => toDate(b.date) - toDate(a.date));
+  items.sort((a, b) => toDate(b.date) - toDate(a.date));
 
   const iconFor = (t) => t === 'academic' ? '<i class="bi bi-mortarboard me-2"></i>' : '<i class="bi bi-stars me-2"></i>';
 
   listEl.innerHTML = items.map(x => `
-    <article class="card shadow-sm timeline-item" data-type="${x.type}">
-      <div class="card-body">
-        <div class="d-flex align-items-start justify-content-between gap-3">
-          <h3 class="h6 mb-0">${iconFor(x.type)}${x.title}</h3>
-          <time class="small text-body-secondary">${new Date(x.date).toLocaleDateString(undefined, { year:'numeric', month:'short', day:'2-digit' })}</time>
+    <article class="custom-card timeline-item" data-type="${x.type}">
+      <div class="card-body d-flex flex-column">
+        <div class="d-flex justify-content-between align-items-start mb-2">
+          <div>
+             <h5 class="card-title mb-1 fw-bold">${iconFor(x.type)}${x.title}</h5>
+             <div class="text-body-secondary small">${new Date(x.date).toLocaleDateString(undefined, { year: 'numeric', month: 'short', day: '2-digit' })}</div>
+          </div>
         </div>
-        <div class="mt-2">${md(x.descriptionMd || x.description || '')}</div>
-        ${(x.links||[]).map(l=>`<a class="btn btn-sm btn-link px-0 me-3" href="${l.href}" target="_blank" rel="noopener">${l.label}</a>`).join('')}
+        <div class="card-text text-body-secondary mb-3">${md(x.descriptionMd || x.description || '')}</div>
+        <div class="mt-auto d-flex flex-wrap gap-2">
+            ${(x.links || []).map(l => `<a class="btn btn-sm btn-outline-primary" href="${l.href}" target="_blank" rel="noopener">${l.label}</a>`).join('')}
+        </div>
       </div>
     </article>
   `).join('');
 
   // Filtering
-  function applyFilter(f){
+  function applyFilter(f) {
     document.querySelectorAll('#timelineList [data-type]').forEach(el => {
       el.classList.toggle('d-none', f !== 'all' && el.dataset.type !== f);
     });
