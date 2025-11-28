@@ -56,5 +56,17 @@
             "Novel"
         ],
         "date": "2025-11-28"
+    },
+    {
+        "title": "Nature of Code by Daniel Shiffman",
+        "link": "https://natureofcode.com/",
+        "image": "https://natureofcode.com/static/7dd3422c43faa1513528cd25636d9e6b/b08a9/cover.png",
+        "comment": "Awesome book on how to express (in Javascript) some netural phenomena.",
+        "tags": [
+            "Book",
+            "CS",
+            "p5.js"
+        ],
+        "date": "2025-11-28"
     }
 ]
