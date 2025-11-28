@@ -1,17 +1,5 @@
 [
     {
-        "title": "The Bitter Lesson",
-        "link": "http://www.incompleteideas.net/IncIdeas/BitterLesson.html",
-        "image": "",
-        "comment": "A classic essay by Rich Sutton about how general methods that leverage computation are ultimately the most effective.",
-        "tags": [
-            "AI",
-            "Reading",
-            "Classic"
-        ],
-        "date": "2024-03-15"
-    },
-    {
         "title": "3Blue1Brown - Neural Networks",
         "link": "https://www.youtube.com/playlist?list=PLZHQObOWTQDNU6R1_67000Dx_ZCJB-3pi",
         "image": "https://img.youtube.com/vi/aircAruvnKk/maxresdefault.jpg",
@@ -21,30 +9,52 @@
             "AI",
             "Math"
         ],
-        "date": "2024-03-20"
+        "date": "2025-11-27"
     },
     {
-        "title": "Distill.pub",
-        "link": "https://distill.pub/",
-        "image": "",
-        "comment": "Interactive articles about machine learning. Unfortunately inactive now, but the archives are gold.",
+        "title": "Notion",
+        "link": "https://www.notion.com/",
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSbwI-YH2DFRO-mGC0sjo-Kin7So9bhNxt_YQ&s",
+        "comment": "This tool has saved my University life. Here I store all my notes and assignments, and it makes extremely easy to share it with others.",
         "tags": [
-            "AI",
-            "Journal",
-            "Interactive"
+            "Productivity",
+            "Tool"
         ],
-        "date": "2024-02-10"
+        "date": "2025-11-27"
     },
     {
-        "title": "Attention Is All You Need",
-        "link": "https://arxiv.org/abs/1706.03762",
-        "image": "",
-        "comment": "The paper that introduced the Transformer architecture.",
+        "title": "StatQuest with Josh Starmer",
+        "link": "https://www.youtube.com/@statquest",
+        "image": "https://yt3.googleusercontent.com/Lzc9YzCKTkcA1My5A5pbsqaEtOoGc0ncWpCJiOQs2-0win3Tjf5XxmDFEYUiVM9jOTuhMjGs=s160-c-k-c0x00ffffff-no-rj",
+        "comment": "Awesome channel that easily explains statistics and ML in a way that is easy to understand.",
         "tags": [
-            "Paper",
-            "AI",
-            "NLP"
+            "Video",
+            "Statistics",
+            "ML"
         ],
-        "date": "2024-01-05"
+        "date": "2025-11-27"
+    },
+    {
+        "title": "The Coding Train (Daniel Shiffman)",
+        "link": "https://www.youtube.com/@TheCodingTrain",
+        "image": "https://yt3.googleusercontent.com/RiEeGpGKrgi91keL8xw0G156rmZgEl2lNRSnitPyX-cd-TnzBu2iSJzPCCl9QqJLzHCDXxIIQQ=w2276-fcrop64=1,00005a57ffffa5a8-k-c0xffffffff-no-nd-rj",
+        "comment": "My first CS teacher, who introduced me to the world of programming.",
+        "tags": [
+            "Video",
+            "CS",
+            "p5.js"
+        ],
+        "date": "2025-11-27"
+    },
+    {
+        "title": "Straight White Male by John Niven",
+        "link": "https://www.theguardian.com/books/2013/aug/15/straight-white-male-john-niven-review",
+        "image": "https://medienjournal-blog.de/wp-content/uploads/2015/10/Niven_JStraight_White_Male_159099-400x200.jpg",
+        "comment": "One of my favorite books. If you can go beyond the title, is an interesting novel on love lived as a male individual.",
+        "tags": [
+            "Book",
+            "Novel"
+        ],
+        "date": "2025-11-28"
     }
 ]
