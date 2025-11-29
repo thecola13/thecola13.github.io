@@ -41,8 +41,20 @@
         <!-- Filter Section -->
         <div class="mb-5">
             <h5 class="mb-3">Filter by tags:</h5>
-            <div id="tags-container" class="d-flex flex-wrap gap-2">
-                <!-- Tags will be injected here -->
+            <div class="d-flex flex-column gap-2" style="max-width: 400px;">
+                <!-- Selected Tags -->
+                <div id="selected-tags" class="d-flex flex-wrap gap-2"></div>
+
+                <!-- Search Input & Dropdown -->
+                <div class="position-relative">
+                    <div class="input-group">
+                        <span class="input-group-text bg-body"><i class="bi bi-search"></i></span>
+                        <input type="text" id="tag-search-input" class="form-control" placeholder="Search tags..."
+                            autocomplete="off">
+                    </div>
+                    <div id="tag-search-results" class="list-group position-absolute w-100 shadow-sm mt-1"
+                        style="z-index: 1000; display: none; max-height: 300px; overflow-y: auto;"></div>
+                </div>
             </div>
         </div>
 
