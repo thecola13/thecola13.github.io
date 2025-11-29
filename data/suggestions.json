@@ -1,107 +1,119 @@
 [
-    {
-        "title": "3Blue1Brown - Neural Networks",
-        "link": "https://www.youtube.com/playlist?list=PLZHQObOWTQDNU6R1_67000Dx_ZCJB-3pi",
-        "image": "https://img.youtube.com/vi/aircAruvnKk/maxresdefault.jpg",
-        "comment": "The best visual introduction to how neural networks actually work.",
-        "tags": [
-            "Video",
-            "AI",
-            "Math"
-        ],
-        "date": "2025-11-27"
-    },
-    {
-        "title": "Notion",
-        "link": "https://www.notion.com/",
-        "image": "https://avatars.slack-edge.com/2022-11-04/4337716049777_09e09654eb84cb3b4d8b_512.png",
-        "comment": "This tool has saved my University life. Here I store all my notes and assignments, and it makes extremely easy to share it with others.",
-        "tags": [
-            "Productivity",
-            "Tool"
-        ],
-        "date": "2025-11-27"
-    },
-    {
-        "title": "StatQuest with Josh Starmer",
-        "link": "https://www.youtube.com/@statquest",
-        "image": "https://yt3.googleusercontent.com/Lzc9YzCKTkcA1My5A5pbsqaEtOoGc0ncWpCJiOQs2-0win3Tjf5XxmDFEYUiVM9jOTuhMjGs=s160-c-k-c0x00ffffff-no-rj",
-        "comment": "Awesome channel that easily explains statistics and ML in a way that is easy to understand.",
-        "tags": [
-            "Video",
-            "Statistics",
-            "ML"
-        ],
-        "date": "2025-11-27"
-    },
-    {
-        "title": "The Coding Train (Daniel Shiffman)",
-        "link": "https://www.youtube.com/@TheCodingTrain",
-        "image": "https://yt3.googleusercontent.com/RiEeGpGKrgi91keL8xw0G156rmZgEl2lNRSnitPyX-cd-TnzBu2iSJzPCCl9QqJLzHCDXxIIQQ=w2276-fcrop64=1,00005a57ffffa5a8-k-c0xffffffff-no-nd-rj",
-        "comment": "My first CS teacher, who introduced me to the world of programming.",
-        "tags": [
-            "Video",
-            "CS",
-            "p5.js"
-        ],
-        "date": "2025-11-27"
-    },
-    {
-        "title": "Straight White Male by John Niven",
-        "link": "https://www.theguardian.com/books/2013/aug/15/straight-white-male-john-niven-review",
-        "image": "https://medienjournal-blog.de/wp-content/uploads/2015/10/Niven_JStraight_White_Male_159099-400x200.jpg",
-        "comment": "One of my favorite books. If you can go beyond the title, is an interesting novel on love lived as a male individual.",
-        "tags": [
-            "Book",
-            "Novel"
-        ],
-        "date": "2025-11-28"
-    },
-    {
-        "title": "Nature of Code by Daniel Shiffman",
-        "link": "https://natureofcode.com/",
-        "image": "https://natureofcode.com/static/7dd3422c43faa1513528cd25636d9e6b/b08a9/cover.png",
-        "comment": "Awesome book on how to express (in Javascript) some netural phenomena.",
-        "tags": [
-            "Book",
-            "CS",
-            "p5.js"
-        ],
-        "date": "2025-11-28"
-    },
-    {
-        "title": "Artem Kirsanov",
-        "link": "https://www.youtube.com/@ArtemKirsanov",
-        "image": "https://yt3.googleusercontent.com/WvyHMOzKntZKuHQg27TKR-sW7Jm7WYNVkfDd9jr0cWnjwZ-kt8HufKKQnAjTO94HKxLpcLM0Dg=s900-c-k-c0x00ffffff-no-rj",
-        "comment": "Some of the best videos I have foudn on Youtube regarding Neuroscience",
-        "tags": [
-            "Video",
-            "AI",
-            "Neuroscience"
-        ],
-        "date": "2025-11-29"
-    },
-    {
-        "title": "Primer",
-        "link": "https://www.youtube.com/@PrimerBlobs",
-        "image": "https://store.dftba.com/cdn/shop/files/Primer_Banner.png?v=1726072669&width=1300",
-        "comment": "Relaxing videos on Game Theory and simulations, useful to chill out before sleeping",
-        "tags": [
-            "Video",
-            "Game Theory"
-        ],
-        "date": "2025-11-29"
-    },
-    {
-        "title": "Sebastian Lague",
-        "link": "https://www.youtube.com/@SebastianLague",
-        "image": "https://yt3.googleusercontent.com/ytc/AIdro_knyJw3jL_6AGomJmGe3VvfIYxWzZC9Y8z90Liru4G0UHM=s900-c-k-c0x00ffffff-no-rj",
-        "comment": "Very nice videos on Game Design, specifically on the technical side and on how GPUs work. Very interesting also for the general CS audience.",
-        "tags": [
-            "Video",
-            "Game Design",
-            "GPU"
-        ],
-        "date": "2025-11-29"
-    }
+  {
+    "title": "3Blue1Brown - Neural Networks",
+    "link": "https://www.youtube.com/playlist?list=PLZHQObOWTQDNU6R1_67000Dx_ZCJB-3pi",
+    "image": "https://img.youtube.com/vi/aircAruvnKk/maxresdefault.jpg",
+    "comment": "The best visual introduction to how neural networks actually work.",
+    "tags": [
+      "Video",
+      "AI",
+      "Math"
+    ],
+    "date": "2025-11-27"
+  },
+  {
+    "title": "Notion",
+    "link": "https://www.notion.com/",
+    "image": "https://avatars.slack-edge.com/2022-11-04/4337716049777_09e09654eb84cb3b4d8b_512.png",
+    "comment": "This tool has saved my University life. Here I store all my notes and assignments, and it makes extremely easy to share it with others.",
+    "tags": [
+      "Productivity",
+      "Tool"
+    ],
+    "date": "2025-11-27"
+  },
+  {
+    "title": "StatQuest with Josh Starmer",
+    "link": "https://www.youtube.com/@statquest",
+    "image": "https://yt3.googleusercontent.com/Lzc9YzCKTkcA1My5A5pbsqaEtOoGc0ncWpCJiOQs2-0win3Tjf5XxmDFEYUiVM9jOTuhMjGs=s160-c-k-c0x00ffffff-no-rj",
+    "comment": "Awesome channel that easily explains statistics and ML in a way that is easy to understand.",
+    "tags": [
+      "Video",
+      "Statistics",
+      "ML"
+    ],
+    "date": "2025-11-27"
+  },
+  {
+    "title": "The Coding Train (Daniel Shiffman)",
+    "link": "https://www.youtube.com/@TheCodingTrain",
+    "image": "https://yt3.googleusercontent.com/RiEeGpGKrgi91keL8xw0G156rmZgEl2lNRSnitPyX-cd-TnzBu2iSJzPCCl9QqJLzHCDXxIIQQ=w2276-fcrop64=1,00005a57ffffa5a8-k-c0xffffffff-no-nd-rj",
+    "comment": "My first CS teacher, who introduced me to the world of programming.",
+    "tags": [
+      "Video",
+      "CS",
+      "p5.js"
+    ],
+    "date": "2025-11-27"
+  },
+  {
+    "title": "Straight White Male by John Niven",
+    "link": "https://www.theguardian.com/books/2013/aug/15/straight-white-male-john-niven-review",
+    "image": "https://medienjournal-blog.de/wp-content/uploads/2015/10/Niven_JStraight_White_Male_159099-400x200.jpg",
+    "comment": "One of my favorite books. If you can go beyond the title, is an interesting novel on love lived as a male individual.",
+    "tags": [
+      "Book",
+      "Novel"
+    ],
+    "date": "2025-11-28"
+  },
+  {
+    "title": "Nature of Code by Daniel Shiffman",
+    "link": "https://natureofcode.com/",
+    "image": "https://natureofcode.com/static/7dd3422c43faa1513528cd25636d9e6b/b08a9/cover.png",
+    "comment": "Awesome book on how to express (in Javascript) some netural phenomena.",
+    "tags": [
+      "Book",
+      "CS",
+      "p5.js"
+    ],
+    "date": "2025-11-28"
+  },
+  {
+    "title": "Artem Kirsanov",
+    "link": "https://www.youtube.com/@ArtemKirsanov",
+    "image": "https://yt3.googleusercontent.com/WvyHMOzKntZKuHQg27TKR-sW7Jm7WYNVkfDd9jr0cWnjwZ-kt8HufKKQnAjTO94HKxLpcLM0Dg=s900-c-k-c0x00ffffff-no-rj",
+    "comment": "Some of the best videos I have foudn on Youtube regarding Neuroscience",
+    "tags": [
+      "Video",
+      "AI",
+      "Neuroscience"
+    ],
+    "date": "2025-11-29"
+  },
+  {
+    "title": "Primer",
+    "link": "https://www.youtube.com/@PrimerBlobs",
+    "image": "https://store.dftba.com/cdn/shop/files/Primer_Banner.png?v=1726072669&width=1300",
+    "comment": "Relaxing videos on Game Theory and simulations, useful to chill out before sleeping",
+    "tags": [
+      "Video",
+      "Game Theory"
+    ],
+    "date": "2025-11-29"
+  },
+  {
+    "title": "Sebastian Lague",
+    "link": "https://www.youtube.com/@SebastianLague",
+    "image": "https://yt3.googleusercontent.com/ytc/AIdro_knyJw3jL_6AGomJmGe3VvfIYxWzZC9Y8z90Liru4G0UHM=s900-c-k-c0x00ffffff-no-rj",
+    "comment": "Very nice videos on Game Design, specifically on the technical side and on how GPUs work. Very interesting also for the general CS audience.",
+    "tags": [
+      "Video",
+      "Game Design",
+      "GPU"
+    ],
+    "date": "2025-11-29"
+  },
+  {
+    "title": "These Repo by BSML",
+    "link": "https://bsmachinelearning.com/theses/",
+    "image": "https://bsmachinelearning.com/assets/img/hero-img.png",
+    "comment": "Some thesis examples by Bocconi students, collected thorugh my association Bocconi Students for Machine Learning",
+    "tags": [
+      "Thesis",
+      "Business",
+      "ML"
+    ],
+    "date": "2025-11-29"
+  }
 ]
