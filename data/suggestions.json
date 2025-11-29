@@ -14,7 +14,7 @@
     {
         "title": "Notion",
         "link": "https://www.notion.com/",
-        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSbwI-YH2DFRO-mGC0sjo-Kin7So9bhNxt_YQ&s",
+        "image": "https://avatars.slack-edge.com/2022-11-04/4337716049777_09e09654eb84cb3b4d8b_512.png",
         "comment": "This tool has saved my University life. Here I store all my notes and assignments, and it makes extremely easy to share it with others.",
         "tags": [
             "Productivity",
@@ -68,5 +68,40 @@
             "p5.js"
         ],
         "date": "2025-11-28"
+    },
+    {
+        "title": "Artem Kirsanov",
+        "link": "https://www.youtube.com/@ArtemKirsanov",
+        "image": "https://yt3.googleusercontent.com/WvyHMOzKntZKuHQg27TKR-sW7Jm7WYNVkfDd9jr0cWnjwZ-kt8HufKKQnAjTO94HKxLpcLM0Dg=s900-c-k-c0x00ffffff-no-rj",
+        "comment": "Some of the best videos I have foudn on Youtube regarding Neuroscience",
+        "tags": [
+            "Video",
+            "AI",
+            "Neuroscience"
+        ],
+        "date": "2025-11-29"
+    },
+    {
+        "title": "Primer",
+        "link": "https://www.youtube.com/@PrimerBlobs",
+        "image": "https://store.dftba.com/cdn/shop/files/Primer_Banner.png?v=1726072669&width=1300",
+        "comment": "Relaxing videos on Game Theory and simulations, useful to chill out before sleeping",
+        "tags": [
+            "Video",
+            "Game Theory"
+        ],
+        "date": "2025-11-29"
+    },
+    {
+        "title": "Sebastian Lague",
+        "link": "https://www.youtube.com/@SebastianLague",
+        "image": "https://yt3.googleusercontent.com/ytc/AIdro_knyJw3jL_6AGomJmGe3VvfIYxWzZC9Y8z90Liru4G0UHM=s900-c-k-c0x00ffffff-no-rj",
+        "comment": "Very nice videos on Game Design, specifically on the technical side and on how GPUs work. Very interesting also for the general CS audience.",
+        "tags": [
+            "Video",
+            "Game Design",
+            "GPU"
+        ],
+        "date": "2025-11-29"
     }
 ]
