@@ -1,9 +1,9 @@
 :root {
   /* Override Bootstrap primary to a codish green */
-  --bs-primary: #2ecc71;
-  --bs-primary-rgb: 46,
-    204,
-    113;
+  --bs-primary: #229652;
+  --bs-primary-rgb: 34,
+    150,
+    82;
 }
 
 html {
@@ -48,18 +48,18 @@ html {
 
 .btn-primary:hover,
 .btn-primary:focus {
-  background-color: #27ae60 !important;
+  background-color: #1A7440 !important;
   /* slightly darker on hover/focus */
-  border-color: #27ae60 !important;
+  border-color: #1A7440 !important;
   color: #fff;
 }
 
 .btn-primary:active,
 .btn-primary.active,
 .btn-check:checked+.btn-primary {
-  background-color: #1f8f4b !important;
+  background-color: #048538 !important;
   /* active state */
-  border-color: #1f8f4b !important;
+  border-color: #048538 !important;
 }
 
 .btn-primary:focus {
