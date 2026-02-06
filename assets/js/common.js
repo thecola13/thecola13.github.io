@@ -33,39 +33,6 @@ window.renderMasonry = function (container, items, renderItemFn) {
   // Create column arrays
   const columns = Array.from({ length: colCount }, () => []);
 
-  // Track heights to distribute evenly (approximation by item count if height unknown, 
-  // but better to just round-robin or use a simple greedy approach if we could measure.
-  // Since we can't easily measure before rendering, we'll use a simple round-robin 
-  // but with a twist: we'll try to fill columns to keep them balanced.
-  // Actually, for simple text/image cards, round-robin is often "good enough" for order preservation,
-  // but the user asked to "optimize packing... bottom row is as less uneven as possible".
-  // A simple greedy approach (add to shortest column) is best for packing, but changes order.
-  // The user said: "I can allow for slight changes in ordering to achieve this".
-  // So we will simulate "height" by assuming text length correlates to height? 
-  // No, that's complex. Let's just use round-robin for now as it's robust, 
-  // OR since we are rendering HTML strings, we can't measure them yet.
-  // 
-  // WAIT: The standard way to do this without JS measurement libraries is CSS columns (masonry),
-  // but that messes up ordering (top-to-bottom then left-to-right).
-  // JS Masonry usually requires measuring.
-  // 
-  // Alternative: Render all, measure, then position? Too complex for this scope.
-  // 
-  // Let's stick to a column-based distribution. 
-  // If we just distribute items 1, 2, 3, 1, 2, 3... it preserves order roughly.
-  // If we want to "optimize packing", we need to know heights.
-  // 
-  // Let's try a simple "balanced" distribution:
-  // Just distribute items sequentially into columns.
-  // This ensures the bottom row is as even as possible (at most 1 item difference).
-  // 
-  // However, if one item is huge and others small, one column gets long.
-  // Without measuring, we can't fix that.
-  // BUT, the user said "I can allow for slight changes in ordering".
-  // 
-  // Let's stick to sequential distribution (0, 1, 2, 0, 1, 2...) for simplicity and robustness 
-  // without heavy DOM thrashing/measuring. It guarantees the *count* is even.
-
   items.forEach((item, i) => {
     columns[i % colCount].push(item);
   });

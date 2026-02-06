@@ -1,5 +1,17 @@
 [
   {
+    "date": "2026-02-02",
+    "title": "Winter School in Cryptography and Machine Learning",
+    "type": "academic",
+    "descriptionMd": "Accepted to participate in the Winter School in Cryptography and Machine Learning, hosted by [AI4I](https://ai4i.it/), where I had the chance to explore the intersection between these two fieds through talks by Adi Shamir, Vinod Vaikuntanathan, Or Zamir and others.",
+    "link": [
+      {
+        "label": "Winter School",
+        "href": "https://ai4i.it/ias-winter-school-2026/"
+      }
+    ]
+  },
+  {
     "date": "2025-09-21",
     "title": "Master Thesis in Secure Multi-Party Computation",
     "type": "academic",
@@ -24,11 +36,13 @@
     "date": "2025-03-01",
     "title": "Selected for Visiting Student Initiative",
     "type": "academic",
-    "descriptionMd": "Selected to participate in the Visiting Student initiative. Currently working with prof. [Francesca Buffa](https://cs.unibocconi.eu/people/francesca-buffa) on transcriptional signatures of hypoxia in cancer cells.",
-    "links": [{
-      "label": "VSI Program",
-      "href": "https://bidsa.unibocconi.eu/people/visiting-students-initiative"
-    }]
+    "descriptionMd": "Selected to participate in the Visiting Student initiative. Worked with prof. [Francesca Buffa](https://cs.unibocconi.eu/people/francesca-buffa) on transcriptional signatures of hypoxia in cancer cells.",
+    "links": [
+      {
+        "label": "VSI Program",
+        "href": "https://bidsa.unibocconi.eu/people/visiting-students-initiative"
+      }
+    ]
   },
   {
     "date": "2024-10-14",
@@ -94,7 +108,12 @@
     "title": "Foundation of Astra Bocconi",
     "type": "personal",
     "descriptionMd": "Founded a new student representatives group in my University.",
-    "links": [{ "label": "Astra Bocconi", "href": "https://www.astrabocconi.com/" }]
+    "links": [
+      {
+        "label": "Astra Bocconi",
+        "href": "https://www.astrabocconi.com/"
+      }
+    ]
   },
   {
     "date": "2021-10-14",
