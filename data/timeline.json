@@ -1,10 +1,22 @@
 [
   {
+    "date": "2026-02-09",
+    "title": "First contribution to an open source project",
+    "type": "academic",
+    "descriptionMd": "I was able to make a (small) contribution to [Stegano](https://pypi.org/project/stegano/), a Python library for steganography, by standardizing CLI access points for a functionality. This was done on behalf of the [Bocconi Open Source Society](https://b-open.dev/), a group of open-source software enthusiasts that I had the chance to co-found.",
+    "links": [
+      {
+        "label": "PR link",
+        "href": "https://github.com/cedricbonhomme/Stegano/pull/63"
+      }
+    ]
+  },
+  {
     "date": "2026-02-02",
     "title": "Winter School in Cryptography and Machine Learning",
     "type": "academic",
-    "descriptionMd": "Accepted to participate in the Winter School in Cryptography and Machine Learning, hosted by [AI4I](https://ai4i.it/), where I had the chance to explore the intersection between these two fieds through talks by Adi Shamir, Vinod Vaikuntanathan, Or Zamir and others.",
-    "link": [
+    "descriptionMd": "Attended the Winter School in Cryptography and Machine Learning, hosted by [AI4I](https://ai4i.it/), where I had the chance to explore the intersection between these two fieds through talks by Adi Shamir, Vinod Vaikuntanathan, Or Zamir and others.",
+    "links": [
       {
         "label": "Winter School",
         "href": "https://ai4i.it/ias-winter-school-2026/"
