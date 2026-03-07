@@ -99,7 +99,8 @@
 		const socialLinks = [
 			{ name: 'GitHub', url: 'https://github.com/thecola13', icon: 'bi bi-github' },
 			{ name: 'LinkedIn', url: 'https://www.linkedin.com/in/luca-colaci-438837223/', icon: 'bi bi-linkedin' },
-			{ name: 'Instagram', url: 'https://www.instagram.com/the.cola/', icon: 'bi bi-instagram' }
+			{ name: 'Instagram', url: 'https://www.instagram.com/the.cola/', icon: 'bi bi-instagram' },
+			{ name: 'Google Scholar', url: 'https://scholar.google.com/citations?user=NM3TtHgAAAAJ', icon: 'bi bi-google' }
 		];
 		const container = document.getElementById('social-links');
 		if (container) {
@@ -115,4 +116,3 @@
 	}
 
 })();
-  
