@@ -1,5 +1,12 @@
 [
   {
+    "date": "2026-04-20",
+    "title": "AI Engineering Internship",
+    "type": "personal",
+    "descriptionMd": "Started my internship at [One Tech](https://www.otech.one/home) as an AI Engineer.",
+    "links": []
+  },
+  {
     "date": "2026-02-09",
     "title": "First contribution to an open source project",
     "type": "academic",
